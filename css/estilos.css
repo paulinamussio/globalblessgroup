@@ -1,95 +1,352 @@
-* {
-    margin:0;
-    padding:0
-}
-.barh1 {
-    font-family: 'Patrick Hand SC', cursive;
-    font-size: 70px;
-    text-align: center;
-    background-color: white;
-    position: absolute;
-    right: 500px;
-} 
-.imgbar {
-    width: 100px;
-    height: auto;
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Patrick Hand SC', cursive;
 }
 
-nav{
-    background-color: white;
-    padding: 0px;
-    border: 1px solid black;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: center;
+#continer{
+  display: grid;
+  grid-template-areas: 
+  'logo titulo titulo bandera';
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  background-color: white;
+}
+
+#logo{
+  grid-area: logo;
+}
+#titulo{
+  grid-area: titulo;
+  text-align: center;
+}
+#bandera{
+  grid-area: bandera;
+  justify-self: end;
+  align-self: end; 
+}
+
+h1{
+  justify-content: space-around;
+  background-color: white;
 }
 
 
-nav li{
-    display: inline-block;}
+.navbar{
+  background-color:#f2f2f2;
+}
+.imagen_fondo{
+  background-image: url(../img/familia-ensamblada-e1538510634725-800x400.jpeg);
+  background-size: cover;
+  width: 100%;
+}
 
-nav a {
-    display: inline-block;
-    font-family: 'Patrick Hand SC', cursive; 
-    color: #022c5c;
+.info{
+  padding: 5px 5px;
+  background-color: #A1CC95;
+}
+
+.info p{
+  margin: 5px;
+}
+
+.equipo h2{
+  margin-bottom: 0px;
+  font-style: italic;
+  text-align: center;
+  padding: 5px;
+  background-image: url(../img/fondo2.jpeg)
+}
+
+.conteiner2{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-image: url(../img/fondo2.jpeg)
+}
+
+
+.card {
+  margin: 5px 5px;
+  width: 20%;
+  height: 310px;
+  background: white;
+  padding: .4em;
+  border-radius: 6px;
+}
+
+.card-image {
+  background-image: url(../img/INDIVIDUAL.jpeg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 60%;
+  border-radius: 6px 6px 0 0;
+}
+
+.card-image:hover {
+  transform: scale(0.98);
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(63, 121, 230);
+  padding: 10px 7px 0;
+  text-align: center;
+}
+
+.category:hover {
+  cursor: pointer;
+}
+
+.heading {
+  font-weight: 600;
+  color: rgb(88, 87, 87);
+  padding: 7px;
+  font-size: 11px;
+}
+
+.heading:hover {
+  cursor: pointer;
+}
+
+.author {
+  color: gray;
+  font-weight: 400;
+  font-size: 15px;
+  padding-top: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
+.footer{
+  background-image: url(../img/Azul-medio.jpeg);
+  color: white;
+}
+
+.btn {
+  background-color: green;
+}
+
+.qhacemos{
+  background-color: #A1CC95;
+}
+.qhacemos p{
+  margin-bottom: 0;
+  padding: 7px;
+}
+
+#conteiner3{
+  display: grid;
+  grid-template-areas: 
+  'info1 info1 foto1'
+  'info2 info2 foto2'
+  'info3 info3 foto3'
+  'info4 info4 foto4';
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px 200px;
+  background-color: #A1CC95;
+}
+
+
+#Segurosdesaludindiviudales{
+  grid-area: info1;
+}
+#foto1{
+  grid-area: foto1;
+  justify-self: end;
+  align-self: end; 
+}
+
+#Segurosdesaludcorporativos{
+  grid-area: info2;
+}
+#foto2{
+  grid-area: foto2;
+  justify-self: end;
+  align-self: end; 
+}
+
+#Segurosdeportivos{
+  grid-area: info3;
+}
+#foto3{
+  grid-area: foto3;
+  justify-self: end;
+  align-self: end; 
+}
+#Segurosdevida{
+  grid-area: info4;
+}
+#foto4{
+  grid-area: foto4;
+  justify-self: end;
+  align-self: end; 
+}
+.tit_cont3{
+  font-size: 50px;
+  text-align: center;
+}
+.par_cont3{
+  font-size: 15px;
+  text-align: justify;
+  text-align: center;
+  padding: 7px;
+}
+
+.img_cont3{
+  height: 200px;
+  width: 400px;
+}
+
+#continer4{
+  display: grid;
+  grid-template-areas: 
+  'contactanos ubicacion'
+  'imagen formulario';
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  background-color: white;
+
+}
+
+#contactanos4{
+  grid-area: contactanos;
+  text-align: justify;
+  text-align: center;
+}
+#ubicacion4{
+  grid-area: ubicacion;
+  justify-self: center;
+  align-self: end;  
+}
+#imagen4{
+  grid-area: imagen;
+}
+
+#formulario{
+  grid-area: formulario;
+}
+.conth2{
+  font-size: 50px;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.logoredes{
+  width: 100%;
+  height: 300px;
+
+}
+.donde{
+  text-align: center;
+}
+.wtc{
+  padding: 5px;
+}
+
+#imagen4 img{
+  width: 100%;
+  height: 100%;
+}
+
+#form{
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+.cons{
+  font-size: 30px;
+  line-height: 1;
+}
+
+.formdiv{
+  padding: 2px;
+}
+
+#conteiner5{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10px;
+
+}
+
+/* desktop */
+@media only screen and (min-width: 768px) and (max-width: 1500px) {
+  h1{
+      margin-top: 5px;
+      font-size: 70px;
+  }
+  .logo_global{
+      width: 100px;
+      height: auto;
+  }
+  .banderas{
+      width: 90px;
+      height: auto;
+  }
+  .container-fluid{
+      justify-content: space-around;
+  }
+  .imagen-fondo{
+      height: 80vh;
+  }
+  h2{
+    font-size: 40px;
+  }
+
+}
+
+
+/* mobile */
+
+@media only screen and (max-width: 768px) {
+  h1{
+      font-size: 40px;
+      margin-bottom: 5px;
+  }
+  .logo_global{
+      width: 70px;
+      height: auto;
+  }
+  .banderas{
+      width: 50px;
+      height: auto;
+  }
+  .navbar-brand{
+      font-size: 15px;
+  }
+  .nav-link{
+      font-size: 10px;
+  }
+  .navbar-toggler{
+      padding: 2px;
+      font-size: 15px;
+  }
+  .imagen-fondo{
+      height: 30vh;
+  }
+  h2{
     font-size: 25px;
-    text-decoration: none;
-    border: 2px solid black;
-    padding: 5px;
-    margin: 5px;
-}
-.segurosalineados{
-    display: inline-block;
-    background-image: url(../img/fondo2.jpeg);
-    text-align: center;
-    width: 100%;
-}
-.fondo-imagen {
-    background-image: url(../img/familia-ensamblada-e1538510634725-800x400.jpeg);
-    background-size: cover;
-    background-position: center center;
-    height: 80vh;
-}
+  }
 
-
-.seguros {
-    margin: 10px;
-    height: 350px;
-    width: 250px;
-    border: 5px solid black;
-    font-family: 'Patrick Hand SC', cursive; 
-    text-align: center; 
-    display: inline-block;
-    vertical-align: top;
-}
-
-.imagen-inicio {
-    height: 150px;
-    width: 250px;
-    background-size: cover;
-    background-position: center center;
-}
-
-.quiero {
-    display: inline-block;
-    background-image: url(../img/fondoazul.jpeg);
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-family: 'Patrick Hand SC', cursive;
-    color: white;
-    text-decoration: none;
-}
-
-.footer {
-    background-image: url(../img/Azul-medio.jpeg);
-    background-size: cover;
-    background-position: center;
-    padding: 20px 0;
-    max-height: 70px;
-    text-align: left;
-    font-size: 25px;
-    font-family: 'Patrick Hand SC', cursive; 
-    text-decoration: none;   
-    color: white;
+  .conteiner2 {
+      display: flex; 
+      flex-direction: column; 
+      align-items: center;
+  }
+  .card {
+      margin-bottom: 30px; 
+      display: flex; 
+      flex-direction: column; 
+      align-items: flex-start; 
+      width: 90%;
+      height: 350px; 
+  }
+  .author{
+      font-size: 15px;
+      text-align: center;
+  }
 }
